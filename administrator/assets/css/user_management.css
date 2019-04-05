@@ -1,0 +1,11 @@
+#image_container .form-group {
+  text-align: center;
+}
+
+#userImage {
+  width: 40%;
+}
+
+#imgUser {
+  display: inline;
+}

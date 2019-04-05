@@ -1,0 +1,292 @@
+@import 'fonts.css';
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+  background: #43b76E;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  opacity: 0.7;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.bold {
+  font-family: 'PT Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.italic {
+  font-family: 'PT Sans Italic', sans-serif;
+  font-weight: 400;
+}
+
+.bold-italic {
+  font-family: 'PT Sans Bold Italic', sans-serif;
+  font-weight: 700;
+}
+
+.main.container {
+  margin-top: 10px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+@media (min-width: 320px) {
+  .main.container {
+    margin-left: 10%;
+    width: 92%;
+  }
+}
+
+@media (min-width: 375px) {
+  .main.container {
+    margin-left: 9%;
+    width: 92%;
+  }
+}
+
+@media (min-width: 480px) {
+  .main.container {
+    margin-left: 7%;
+    width: 94%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main.container {
+    margin-left: 5%;
+    width: 95%;
+  }
+}
+
+@media (min-width: 992px) {
+  .main.container {
+    margin-left: 4%;
+    width: 96%;
+  }
+
+  .main.container.adjust-left {
+    margin-left: 14%;
+    width: 86%;
+  }
+
+  .navbar-toggle {
+    display: inherit;
+    float: left;
+    background-color: cornflowerblue;
+    width: 40px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .navbar-toggle > .icon-bar {
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main.container {
+    margin-left: 3%;
+    width: 97%;
+  }
+
+  .main.container.adjust-left {
+    margin-left: 14%;
+    width: 86%;
+  }
+}
+
+/* Error 404 page styles */
+.error404page {
+  width: 90%;
+  margin: auto;
+}
+
+.error404page .row {
+  margin-top: 30px;
+}
+
+.error404page h1 {
+  padding: 20px;
+  background: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 0;
+  height: 150px;
+}
+
+.error404page h3 {
+  padding: 20px;
+  background-color: dimgray;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.error404page img {
+  width: 30%;
+  float: left;
+  margin: 2px 15px 15px 2px;
+}
+
+.error404page span {
+  position: absolute;
+  font-size: 28px;
+  width: 60%;
+}
+
+@media (min-width: 375px) {
+  .error404page span {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .error404page h1 {
+    height: 230px;
+  }
+
+  .error404page span {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .error404page img {
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .error404page h1 {
+    height: 360px;
+  }
+
+  .error404page img {
+    width: 38%;
+  }
+
+  .error404page span {
+    width: 40%;
+    margin-top: 5%;
+    font-size: 58px;
+  }
+
+  .error404page #btnBack {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .error404page h1 {
+    height: 400px;
+  }
+
+  .error404page img {
+    width: 35%;
+  }
+
+  .error404page span {
+    margin-top: 6%;
+    width: 40%;
+  }
+
+  .error404page #btnBack {
+    font-size: 36px;
+  }
+}
+
+/* Form style essentials */
+.modal.modal-dialog {
+  padding-right: auto;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .modal.modal-dialog {
+    padding-right: 0 !important;
+  }
+}
+
+.modal.modal-dialog:not(.login-form) {
+  position: fixed;
+  margin-top: 5%;
+}
+
+.modal-heading .close {
+  margin-right: 2%;
+}
+
+.error {
+  color: red;
+}
+
+.error > .form-control.field {
+  border: solid thin red;
+  color: red;
+}
+
+.note {
+  font-size: 10px;
+}
+
+.note.solution {
+  font-size: 12px;
+  color: green;
+}
+
+.alert_group .close {
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+}
+
+/* Placeholder */
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+.placeholder {
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: darkgray;
+    background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+    background-size: 100% 20px;
+    height: auto;
+}
+
+.placeholder-image {
+  background-size: 100% 100px;
+}
+
+.text-bold {
+  font-weight: bold;
+}

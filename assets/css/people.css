@@ -1,0 +1,204 @@
+.people{
+	padding: 10px, 20px;
+}
+
+.people .section-title {
+	padding-left: 1%;
+	background: rgb(231,239,234);
+	background: linear-gradient(270deg, rgba(231,239,234,1) 0%, rgba(104,187,134,1) 50%, rgba(34,92,55,1) 100%);
+}
+
+
+.all-news {
+	width: 70%;
+	border-radius: 60px 20px;
+	border: solid #2276BC;
+}
+
+#buttonallplaces {
+	margin-bottom: 2%;
+}
+
+.people .section-title h1 {
+	color: #fff;
+	font-size: 60px;
+	font-style: Italic;
+}
+
+.headline {
+	position: relative;
+	margin-top: 10px;
+}
+
+.headline-image img {
+	max-width: 100%;
+}
+
+.headline-item {
+	position: absolute;
+	top: 0;
+  left: 5%;
+	width: 50%;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.7);
+	margin-top: 10px;
+}
+
+@media (min-width: 1200px) {
+	.headline-item {
+		left: 17%;
+		width: 30%;
+	}
+}
+
+
+.headline-container {
+	background: rgba(255, 255, 255, 0.7);
+	padding: 10px;
+}
+
+.headline-title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.people-row {
+	padding: auto;
+}
+
+.people-container {
+	background: rgba(255, 255, 255, 0.7);
+	padding: 10px;
+}
+
+.people-title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.people-image {
+	text-align: center;
+}
+
+.author-name, .date-posted {
+	font-size: 12px;
+}
+
+.item-content {
+	padding-right: 30px;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	margin-left: 1%;
+}
+
+.item-content > div {
+	position: relative;
+}
+
+.item-content > .item-image {
+	float: left;
+}
+
+.item-content > .item-info {
+	float: right;
+	width: 55%;
+}
+
+.item-content .item-image > img{
+	height: 110px;
+  width: 160px
+}
+
+.people-columns .more-articles {
+	background: #fff;
+}
+
+.people-columns .more-articles h1 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.places-columns .more-places {
+	background: #fff;
+}
+
+.places-columns .more-places h1 {
+	color: #000000;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.places-columns .places h1 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 32px;
+	padding-bottom: 5%;
+}
+
+.places .section-title {
+	padding-left: 1%;
+	background: rgb(231,239,234);
+	background: linear-gradient(270deg, rgba(231,239,234,1) 0%, rgba(104,187,134,1) 50%, rgba(34,92,55,1) 100%);
+	margin-top: 2%;
+}
+.places .section-title h1 {
+	color: #ffff;
+	font-size: 60px;
+	font-style: Italic;
+}
+.carousel {
+	padding-top: 1%;
+}
+.carousel-inner .item > img {
+	margin: 0 auto;
+	height: 450px;
+}
+
+.item-content {
+	border: solid thin #707070;
+	background-color: #fff;
+	opacity: 0.9;
+	width: 100%;
+}
+
+.people-list hr {
+	margin-top: 0%;
+	margin-bottom: 0%;
+	border: 0;
+	border-top: 1px solid #66342D;
+}
+
+.item-content .item-image > img {
+    height: 110px;
+    width: 160px;
+}
+
+.item-content .people-info .date {
+	font-family: inherit;
+  font-size: 135%;
+  font-style: italic;
+	margin-top: -2%;
+}
+
+.item-content .people-info .title {
+	margin-top: 1%;
+	font-family: helvetica,sans-serif;
+	font-weight: bold;
+	font-size: 220%;
+}
+
+.places-row {
+	margin-bottom: 2%;
+}
+
+.place-item .item-content .place-info .title {
+	margin-top: 1%;
+	font-family: helvetica,sans-serif;
+	font-weight: bold;
+	font-size: 220%;
+}
+
+/* .people-row {
+	margin-top: -5%;
+} */

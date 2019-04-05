@@ -1,0 +1,100 @@
+@media (min-width: 992px) {
+  #modalAlbum {
+    width: 84%;
+    margin-left: 15%;
+  }
+}
+
+#modalAlbum .modal-content hr:first, #modalAlbum .modal-heading hr {
+  margin: 0;
+}
+
+.album-list {
+  padding: 2px;
+}
+
+.album-navigator-buttons {
+  background: #ace;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.image-details {
+  background: cornsilk;
+  border-left: 0;
+  padding: 20px;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .image-details {
+    border-top: solid thin #ccc;
+    border-left: solid thin #ccc;
+  }
+}
+
+#closeImageDetails {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  color: red;
+}
+
+#closeImageDetails:hover {
+  cursor: pointer;
+}
+
+#albumImage {
+  width: 75%;
+  border: solid thin #ccc;
+}
+
+#albumImage:hover {
+  cursor: pointer;
+}
+
+.album-row {
+  margin: 0;
+}
+
+.album-item {
+  padding: 2px;
+  border: solid thin #ccc;
+  height: 200px;
+}
+
+.album-item:hover {
+  cursor: pointer;
+}
+
+.album-item .item-image {
+  position: relative;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .album-item .item-image {
+    left: 50%;
+    width: 100%;
+  }
+}
+
+.album-item .item-name {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  padding-left: 1%;
+  background: rgba(255,255,255, 0.75);
+  text-align: left;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+#btnCopyURL:hover {
+  cursor: pointer;
+}

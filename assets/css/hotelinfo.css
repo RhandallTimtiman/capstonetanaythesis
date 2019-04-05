@@ -1,0 +1,35 @@
+@import "common.css";
+
+#hotelimg {
+  width: 100%;
+  height: 215px;
+}
+
+.hotel{
+  border: solid thin #707070;
+  background-color: #fff;
+  padding: 30px;
+  opacity: 0.9;
+}
+
+
+.services{
+  border: solid thin #707070;
+  background-color: #fff;
+  padding: 30px;
+  opacity: 0.9;
+}
+
+.row-rooms{
+  border: solid thin #707070;
+  background-color: #fff;
+  padding: 30px;
+  opacity: 0.9;
+  margin-right: 10%;
+}
+
+.row-rooms img{
+  width: 33%;
+  height: 80px;
+  margin-left: 5px;
+}

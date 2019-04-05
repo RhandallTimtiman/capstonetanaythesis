@@ -1,0 +1,586 @@
+{
+  "front-version": "2.19.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "d6b61e2e-5121-4ba7-9061-e035db458f17",
+      "lastModified": "2018-09-17T21:53:25.770+08:00",
+      "name": "TanayTourismAPI"
+    },
+    {
+      "type": "Service",
+      "id": "874a90bc-d8aa-4d74-b5f9-bed776bbd7af",
+      "lastModified": "2018-09-17T19:28:18.231+08:00",
+      "name": "Gallery Processes",
+      "parentId": "d6b61e2e-5121-4ba7-9061-e035db458f17"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"slug\": \"hca\",\n  \"gallery\": \"ag%3D%3D\",\n  \"id\": \"0\",\n  \"start\": 0,\n  \"limit\": 0,\n  \"searchkey\": \"\",\n  \"isCarousel\": 0\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "tanay.tourism",
+        "path": "/administrator/gallery/get_gallery_items"
+      },
+      "id": "49abf75a-3c55-44a0-a375-4151a970bb59",
+      "lastModified": "2018-09-16T12:42:39.146+08:00",
+      "name": "Load Gallery Items-JSON",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic dGFuYXl0b3VyaXNtOnRhbmF5MjAxOHRvdXJpc20="
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "enabled": true,
+          "name": "x-requested-with",
+          "value": "XMLHttpRequest"
+        },
+        {
+          "enabled": true,
+          "name": "x-restlet",
+          "value": "true"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "874a90bc-d8aa-4d74-b5f9-bed776bbd7af"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"slug\": \"hca\",\n  \"id\": \"0\",\n  \"start\": 0,\n  \"limit\": 0,\n  \"searchkey\": \"\",\n  \"isCarousel\": 0\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "tanay.tourism",
+        "path": "/administrator/gallery/load_gallery"
+      },
+      "id": "51d554a7-cc9f-4d0f-8aee-e9d8bcfa8944",
+      "lastModified": "2018-09-16T12:40:44.972+08:00",
+      "name": "Load Gallery-JSON",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic dGFuYXl0b3VyaXNtOnRhbmF5MjAxOHRvdXJpc20="
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "enabled": true,
+          "name": "x-requested-with",
+          "value": "XMLHttpRequest"
+        },
+        {
+          "enabled": true,
+          "name": "x-restlet",
+          "value": "true"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "874a90bc-d8aa-4d74-b5f9-bed776bbd7af"
+    },
+    {
+      "type": "Service",
+      "id": "64a59463-fa4f-4805-9602-969aae20a6c3",
+      "lastModified": "2018-09-17T19:29:29.323+08:00",
+      "name": "News Processes",
+      "parentId": "d6b61e2e-5121-4ba7-9061-e035db458f17"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"slug\": \"\",\n  \"id\": \"all\",\n  \"start\": 0,\n  \"limit\": 0,\n  \"searchkey\": \"\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "tanay.tourism",
+        "path": "/administrator/news/load_news"
+      },
+      "id": "17481a45-bb50-4a30-812b-bd4fa5893447",
+      "lastModified": "2018-09-17T21:53:25.772+08:00",
+      "name": "Load News-JSON",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic dGFuYXl0b3VyaXNtOnRhbmF5MjAxOHRvdXJpc20="
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "enabled": true,
+          "name": "x-requested-with",
+          "value": "XMLHttpRequest"
+        },
+        {
+          "enabled": true,
+          "name": "x-restlet",
+          "value": "true"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "64a59463-fa4f-4805-9602-969aae20a6c3"
+    },
+    {
+      "type": "Service",
+      "id": "ee992f62-7c0e-453f-8046-4db4b0e799b5",
+      "lastModified": "2018-09-16T13:47:06.382+08:00",
+      "name": "Page Processes",
+      "parentId": "d6b61e2e-5121-4ba7-9061-e035db458f17"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"searchkey\": \"\",\n  \"start\": 0,\n  \"limit\": 0,\n  \"id\": \"0\",\n  \"slug\": \"pages\",\n  \"tag\": \"history\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "tanay.tourism",
+        "path": "/administrator/pages/load_pagecontentlist"
+      },
+      "id": "1bc78584-dfdc-4607-933a-0d368709b7da",
+      "lastModified": "2018-09-16T14:05:04.779+08:00",
+      "name": "Load Content List (list only)-JSON",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic dGFuYXl0b3VyaXNtOnRhbmF5MjAxOHRvdXJpc20="
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "enabled": true,
+          "name": "x-requested-with",
+          "value": "XMLHttpRequest"
+        },
+        {
+          "enabled": true,
+          "name": "x-restlet",
+          "value": "true"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "ee992f62-7c0e-453f-8046-4db4b0e799b5"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"searchkey\": \"\",\n  \"start\": 0,\n  \"limit\": 0,\n  \"id\": \"all\",\n  \"slug\": \"pages\",\n  \"tag\": \"history\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "tanay.tourism",
+        "path": "/administrator/pages/load_pagecontentlist"
+      },
+      "id": "76a56397-7e87-4ba8-82b3-4fbafdb27045",
+      "lastModified": "2018-09-16T14:04:48.968+08:00",
+      "name": "Load Content List (with content)-JSON",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic dGFuYXl0b3VyaXNtOnRhbmF5MjAxOHRvdXJpc20="
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "enabled": true,
+          "name": "x-requested-with",
+          "value": "XMLHttpRequest"
+        },
+        {
+          "enabled": true,
+          "name": "x-restlet",
+          "value": "true"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "ee992f62-7c0e-453f-8046-4db4b0e799b5"
+    },
+    {
+      "type": "Service",
+      "id": "e96b9a3c-9be7-4f02-99e7-b278c71cb6db",
+      "lastModified": "2018-09-14T20:08:09.496+08:00",
+      "name": "User Processes",
+      "parentId": "d6b61e2e-5121-4ba7-9061-e035db458f17"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "searchkey",
+              "value": ""
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "start",
+              "value": "0"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "limit",
+              "value": "5"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "id",
+              "value": "3"
+            }
+          ]
+        },
+        "bodyType": "Form",
+        "autoSetLength": true,
+        "textBody": "{\n  \"searchkey\": \"\",\n  \"start\": 0,\n  \"limit\": 5,\n  \"id\": 0\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "tanay-tourism.000webhostapp.com",
+        "path": "/a99/users/load_users/"
+      },
+      "id": "20254031-badf-4406-8a93-2beba8281a90",
+      "lastModified": "2018-09-14T20:08:09.496+08:00",
+      "name": "Load Users",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic dGFuYXl0b3VyaXNtOnRhbmF5MjAxOHRvdXJpc20="
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        },
+        {
+          "enabled": true,
+          "name": "x-restlet",
+          "value": "true"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "e96b9a3c-9be7-4f02-99e7-b278c71cb6db"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "username",
+              "value": "superadmin"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "password",
+              "value": "superadmin"
+            }
+          ]
+        },
+        "bodyType": "Form",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "tanay-tourism.000webhostapp.com",
+        "path": "/a99/login/login_user"
+      },
+      "id": "f0d32f0c-eba1-4187-bac6-ddb0bd421c45",
+      "lastModified": "2018-09-14T20:08:09.496+08:00",
+      "name": "Login",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        },
+        {
+          "enabled": true,
+          "name": "x-requested-with",
+          "value": "XMLHttpRequest"
+        },
+        {
+          "enabled": true,
+          "name": "x-restlet",
+          "value": "true"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "e96b9a3c-9be7-4f02-99e7-b278c71cb6db"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"username\": \"superadmin\",\n  \"password\": \"superadmin\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "tanay-tourism.000webhostapp.com",
+        "path": "/a99/login/login_user"
+      },
+      "id": "986ef771-b82f-42c8-8a8c-96bbf9aef82d",
+      "lastModified": "2018-09-14T20:08:09.496+08:00",
+      "name": "Login-JSON",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "enabled": true,
+          "name": "x-requested-with",
+          "value": "XMLHttpRequest"
+        },
+        {
+          "enabled": true,
+          "name": "x-restlet",
+          "value": "true"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "e96b9a3c-9be7-4f02-99e7-b278c71cb6db"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form",
+        "autoSetLength": true,
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "tanay-tourism.000webhostapp.com",
+        "path": "/a99/logout"
+      },
+      "id": "96486442-a880-446d-94e6-af1cc07efcdc",
+      "lastModified": "2018-09-14T20:08:09.496+08:00",
+      "name": "Logout",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        },
+        {
+          "enabled": true,
+          "name": "x-requested-with",
+          "value": "XMLHttpRequest"
+        },
+        {
+          "enabled": true,
+          "name": "x-restlet",
+          "value": "true"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "e96b9a3c-9be7-4f02-99e7-b278c71cb6db"
+    }
+  ]
+}

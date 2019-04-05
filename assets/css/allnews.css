@@ -1,0 +1,56 @@
+@import "common.css";
+
+.news-title h1{
+  font-style: italic;
+font-size: 48px;
+}
+
+
+.divider hr{
+border: none;
+height: 3px;
+width: 35%;
+color: #2276BC;
+background-color: #2276BC;
+margin: 0;
+margin-bottom: 10px;
+}
+
+.divider2 hr{
+  border: none;
+  height: 2px;
+  width: 98%;
+  /* Set the hr color */
+  color: #2276BC; /* old IE */
+  background-color: #2276BC; /* Modern Browsers */
+  margin: 0;
+}
+
+.item-container{
+  border: solid thin #707070;
+    background-color: #fff;
+    padding: 30px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.container-items{
+  border: solid thin #707070;
+  background-color: #fff;
+  padding: 30px;
+  opacity: 0.9;
+  margin-top: 20px;
+  margin-bottom :10px;
+}
+
+.btn:hover{
+  background-color: white;
+}
+
+.btn{
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 25px 20px;
+  opacity: 0.9;
+  margin-left: 45%;
+}
